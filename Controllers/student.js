@@ -64,7 +64,7 @@ const signupStudent = async (req, res) => {
 
     const sendMail = async () => {
       const info = await transporter.sendMail({
-        from: `"Udhayasooriyan" <${EMAIL_ADDRESS}>`,
+        from: `"Kishore Manivel" <${EMAIL_ADDRESS}>`,
         to: student.email,
         subject: "Confirm account",
         text: link,
